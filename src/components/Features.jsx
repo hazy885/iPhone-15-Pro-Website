@@ -1,8 +1,11 @@
 import { useGSAP } from "@gsap/react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { animateWithGsap } from "../utils/animations";
 import { explore1Img, explore2Img, exploreVideo } from "../utils";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Features = () => {
   const videoRef = useRef();
@@ -35,7 +38,7 @@ const Features = () => {
 
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
-      <div className="screen-max-wdith">
+      <div className="screen-max-width">
         <div className="mb-12 w-full">
           <h1 id="features_title" className="section-heading">
             Explore the full story.

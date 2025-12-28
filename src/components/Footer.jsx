@@ -3,16 +3,16 @@ import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="py-5 ms:px-10 px-5">
+    <footer className="py-5 sm:px-10 px-5">
       <div className="screen-max-width">
         <div>
           <p className="font-semibold text-gray text-xs">
             More ways to shop: {' '}
-            <span className="underLine text-blue">
+            <span className="underline text-blue">
               {' '} Find an Apple Store {' '}
             </span>
             or {' '}
-            <span className="underLine text-blue">
+            <span className="underline text-blue">
               {' '} Other retailer{' '}
             </span>{' '}
               near you.
